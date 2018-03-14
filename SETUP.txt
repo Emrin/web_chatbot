@@ -1,0 +1,9 @@
+pip install django
+pip install mysqlclient
+// lancer Apache et MySQL servers (via XAMPP for starters)
+// creer chatlist database dans localhost/phpmyadmin
+// activer la variable tensorflow (cf. doc installation tensorflow)
+activate tensorflow
+python manage.py migrate
+// si il y a des soucis avec l'installation par pip, installer via anaconda
+python manage.py runserver

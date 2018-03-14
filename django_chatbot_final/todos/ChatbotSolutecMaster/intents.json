@@ -1,0 +1,617 @@
+{
+  "intents": [
+
+    {
+      "tag": "Bonjour",
+
+      "patterns": [ "Bonjour", "Salut", "Hey", "Hello", "Enchanté", "Bonsoir", "Coucou", "Holà", "Hi" ],
+
+      "responses": [ "Bonjour, est ce que je peux vous aider ?", "Merci, bienvenue sur le site de Solutec", "Bonjour également puis-je vous être utile ? ", "Bienvenue sur notre site, comment puis je vous renseigner ?", "Bonjour désirez-vous des renseignements ?" ]
+
+    },
+
+    {
+      "tag": "AuRevoir",
+
+      "patterns": [ "Au revoir", "A plus", "A bientot", "Salutation", "Bonne soirée", "Bonne fin de journée" ,"Bisous", "A plus tard", "Bonne fin de matinée"],
+
+      "responses": [ "A plus tard, merci pour votre viste", "Bonne jounée", "Au revoir! à bientot.", "A bienôt merci pour votre visite.", " Bonne journée, ce fut un plaisir de vous aider.", "Je vous salue également et vous souhaite une bonne fin de journée", "Au revoir.", "A bientôt" ]
+
+    },
+
+    {
+      "tag": "Remerciement",
+
+      "patterns": [ "Merci", "Cela m'a été utile", "Merci Beaucoup", "je vous remercie", "Encore merci", "Trés bien", "C'est gentil" ],
+
+      "responses": [ "Ravi de vous aider!", "Pas de problème", "De rien ce fut un plaisir", "Tant mieux !", "Merci beaucoup", "Il n'y a pas de quoi ", " De rien avez-vous d'autres questions ?", "C'est mon travail de vous aider" ]
+
+    },
+
+    {
+      "tag": "Nom_Prenom",
+
+      "patterns": [ "Qui êtes vous ?", "Qui est tu ?", "A qui est ce que je parle ? ", "Qui me parle ? ", "Comment vous appelez-vous ?", "Comment tu t'appelles ?", "Que faites vous?", "Tu sers à quoi?" ],
+
+      "responses": [ "Je suis le chatbot de solutec", "je suis un chatbot qui donne des informations sur Solutec", "Le chatbot de la société Solutec", "Je n'ai pas vraiment de nom je suis un chatbot", "Je n'ai pas de nom je suis le chatbot de Solutec" ]
+
+    },
+
+    {
+      "tag": "Taches",
+
+      "patterns": [ "A quoi sers tu ?", "Que fais tu ?","En quoi peut tu mettre utile ?", "Tu sers à quoi ?", "Qu'est-ce qu'un chatbot ?" ],
+
+      "responses": [ "Je suis là pour vous aider à trouver plus facilement des infomartions", "Je vous renseigne sur la sociétée.", "Je suis là pour vous éviter de chercher les informations sur notre site", "Je suis à votre disposition pour vous renseigner" ]
+
+    },
+
+    {
+      "tag": "localisation",
+
+      "patterns": [ "Où se trouve l'entreprise", "où", "locaux", "adresse", "bureaux", "ville", "Combien de bureaux avez-vous ?", "Où êtes vous implanté ?", "Dans quelle ville vous trouvez-vous ? ", "Es tu dans ma ville ?", "Es tu près de chez moi ?", "Où te trouves tu ?", "Vos bureaux sont loin ?"    ],
+
+      "responses": [ "Nous sommes implantés en France à Paris, Lyon, Nantes et Bordeaux" ]
+
+    },
+
+    {
+      "tag": "Paris",
+
+      "patterns": [ "Où êtes vous à Paris", "Où se trouve vos bureaux à Paris ?", "Quelle est votre adresse à Paris ?", "Une adresse à Paris ?", "Ou sont vos locaux à Paris ?" ],
+
+      "responses": [ "Nous sommes au 86 bd Haussmann" ] 
+       
+    },
+
+    {
+      "tag": "Lyon",
+
+      "patterns": [  "Où êtes-vous à Lyon", "Où se trouve vos bureaux à Lyon ?", "Quelle est votre adresse à Lyon ?", "Une adresse à Lyon ?" , "Ou sont vos locaux à Lyon ?"  ],
+
+      "responses": [ "Nous sommes à l'espace 50, 50 quai Paul Sédallian" ] 
+       
+    },
+
+    {
+      "tag": "Nantes",
+
+      "patterns": [  "Où êtes vous à Nantes", "Où se trouve vos bureaux à Nantes ?", "Quelle est votre adresse à Nantes ?", "Une adresse à Nantes ?" , "Ou sont vos locaux à Nantes ?" ],
+
+      "responses": [ "Nous sommes dans l'immeuble SKYLINE 22 Mail Pablo Picasso" ] 
+       
+    },
+
+    {
+      "tag": "Bordeaux",
+
+      "patterns": [  "Où êtes vous à Bordeaux ?", "Où se trouve vos bureaux à Bordeaux ?", "Quelle est votre adresse à Bordeaux ?", "Une adresse à Bordeaux ?", "Ou sont vos locaux à Bordeaux ?"  ],
+
+      "responses": [ "Nous sommes dans l'immeuble Lumine&Sens 32 Allée de Boutaut Bordeaux" ] 
+       
+    },
+
+    {
+      "tag": "Rencontres",
+
+      "patterns": [ "Quand puis je vous rencontrer ?", "salon", "meeting", "forum", "Quand se déroule le prochain salon ?", "Où se déroule le prochain meeting ?", "Y à t-il bientôt un salon ?", "Y a un salon bientôt ?", "Je peux vous rencontrer ?", "Etes-vous disponible un de ces jours ?", "Si j'ai des questions est ce que je peux vous les poser directement ?" ],
+
+      "responses": [ "Vous pouvez nous rencontrer à notre prochain salon. Il se déroule à & le { pendant } jours au @.", "Vous pouvez nous rencontrer au @ à & le { pendant } jours." ]
+
+    },
+
+    {
+      "tag": "Direction",
+
+      "patterns": [ "Qui est le patron de Solutec ?", "PDG", "patron", "direction", "président", "directeur général", "Qui dirige Solutec ?", "Qui est à la tête de votre sociétée ?" ],
+
+      "responses": [ "Le Président de Solutec est M.Bruyere et le directeur général M.Invernizzi", "Mon President est M.Bruyere et mon directeur général M.Invernizzi " ]
+
+    },
+
+    {
+      "tag": "Ambitions",
+
+      "patterns": [ "Qu'allez-vous faire ?", "Quelles sont vos ambitions ?", "Vers quoi se tourne Solutec ?", "Quel est votre but ?", "C'est quoi votre objectif ?", "Comment voyez-vous le futur ?" ],
+
+      "responses": ["Nos ambitions, fortes, (La performance, la solidité et le relationnel) nous identifient comme un partenaire de référence depuis plus de 20 ans."]
+       
+    },
+
+    {
+      "tag": "Ambitions1",
+
+      "patterns": [ "Que représente la performance pour vous ?", "Qu'entendez-vous par performance ?", "La performancec'est quoi pour vous ?", " L'expertise de solutec ?", "Qu'est que la performance ?" ],
+
+      "responses": ["Notre excellence s’appuie aussi sur le background et l’expertise opérationnelle de nos équipes."]
+       
+    },
+
+    {
+      "tag": "Ambitions2",
+
+      "patterns": [ "Quelle est la solidité de votre entreprise ?", "Sur quelle socle l'entrepise se repose-t-elle ?" ,"Niveau finance ça va ?", "Votre société est-elle en bonne santé ?", "Comment évolue votre entreprise ?", "Votre société est elle en mauvaise santé financiére ?", "Vous êtes plutôt en croissance au pas ?", "Ça va aller dans le futur ?" ],
+
+      "responses": ["Solutec demeure une entreprise autonome. Notre bonne santé financière nous permet d’envisager sereinement l’avenir, de nous investir dans tous les projets.", "Notre société est en en croissance ce qui nous permet de voir l'avenir sereinement "]
+       
+    },
+
+    {
+      "tag": "Ambitions3",
+
+      "patterns": [ "Quel sens du relationnel avez-vous ?", "Quelles sont vos ambitions dans le domaine du relationnel ?", "Est ce que l'humain compte pour vous ?", "Comment voyez-vous la relation employeur employé ?", "Comment voyez-vous les relations entre salariés ?", "Comment voyez-vous la relation client ?" ],
+
+      "responses": [ "Nous accordons un grand intérêt à veiller à entretenir des relations humaines de confiance côté clients comme collaborateurs.", "La notion de relationnel est importante pour nous aussi bien avec nos clients qu'avec nos collaborateurs."] 
+       
+    },
+
+    {
+      "tag": "Valeurs",
+
+      "patterns": [ "Quelles sont vos valeurs ?", "Que défendez-vous ?", "C'est quoi vos valeurs ?", "Que prônez-vous ?", "C'est quoi tes valeurs ?" ],
+
+      "responses": [ "La proximité, la relation client et la confiance sont trés important pour nous" ] 
+       
+    },
+
+    {
+      "tag": "Valeur1",
+
+      "patterns": [ "Avez-vous de la proximité avec vos clients ?", "Comment se traduit la proximité ?", "Quels liens avez-vous avec vos clients ?", "Vous faites comment en gestion de projets ?", "Etes-vous attentifs aux cultures d'entreprises ?" ],
+
+      "responses": [ "Notre expertise en gestion de projet nous permet de nous approprier la culture de chaque client." ] 
+       
+    },
+
+    {
+      "tag": "Valeur2",
+
+      "patterns": [ "Comment voyez-vous les relations client ?", "Que faites-vous pour vos clients ?", "Comment répondez-vous aux besoins de vos clients ?", "Avez-vous de bons retours clients ?", "Quels soins apportez-vous à vos clients ?"],
+
+      "responses": [ "SOLUTEC envisage les relations clients comme des relations humaines. Nous rendre disponibles pour formuler les réponses les plus adaptées."] 
+       
+    },
+
+    {
+      "tag": "Valeur3",
+
+      "patterns": [ "Que veut dire la confiance pour vous ?" , "Tansparence", "C'est quoi la confiance ?", "En quoi êtes-vous sûr ?", "Garde t'on toujours le même interlocuteur avec vous ?", "Les relations sont-elles bien définies dès le départ ?" ],
+
+      "responses": [ "Les liens que nous tissons avec nos clients sont avant tout basés sur la confiance et la transparence." ] 
+       
+    },
+
+    {
+      "tag": "Partenaire_BanqueFiAssu",
+
+      "patterns": [  "Travaillez-vous dans le domaine financier ?", "Avez-vous des clients dans la banque ?", "Quel sont vos clients dans le domaine monétaire ?", "Connaissez-vous le domaine des assurances ?", "Etes-vous présent sur le marché financier ?" ],
+
+      "responses": [ "Nos principaux partenaires dans ce domaine sont: Credit Agricole, Société Général AG2R la mondiale." ] 
+       
+    },
+
+    {
+      "tag": "Partenaire_Service",
+
+      "patterns": [ "Travaillez-vous dans le domaine des services ?", "Avez-vous des clients dans les services ?", "Avez-vous des projets avec des sociétés de services", "Etes-vous partenaire de sociétés de services ?", "Collaborez-vous avec des sociétés de services ?"],
+
+      "responses": [ "Nos principaux partenaires dans ce domaine sont: Addeco, Veolia et Saur." ] 
+       
+    },
+
+    {
+      "tag": "Partenaire_Indus",
+
+      "patterns": [ "Travaillez-vous avec des industriels ?", "Vous travaillez avec des entreprises de l'industrie ?", "Avez-vous des projets avec des industries ?", "Etes-vous partenaire d'industriels ?", "Collaborez-vous avec des industries ?", "Volvo", "Cegelec", "Thales", "Biomereux" ],
+
+      "responses": [ "Nos principaux partenaires dans ce domaine sont: Volvo, Cegelec, Thales et Biomereux." ] 
+       
+    },
+
+    {
+      "tag": "Partenaire_Grandedistrib",
+
+      "patterns": [ "Travaillez-vous avec la grande distribution ?", "Vous travaillez avec des grands magasins ?", "Des clients dans l'alimentation ?", "Avez-vous des projets avec des grandes surfaces ?", "Etes-vous partenaire de distributeurs ?", "Collaborez-vous avec le monde de la grande distribution ?", "Monoprix", "Carrefour", "Casino" ],
+
+      "responses": [ "Nos principaux partenaires dans ce domaine sont: Carrefour, Casino et Monoprix" ] 
+       
+    },
+
+    {
+      "tag": "Partenaire_Energie",
+
+      "patterns": [ "Quel sont les entreprises partenaires dans le domaine de l'énergie ?", "Dans le secteur énergétique avez-vous des clients", "Travaillez-vous dans l'électricité ?", "Avez-vous des partenaires dans les énergies renouvelables ?" , "Collaborez-vous avec des industries de l'énergie ?", "EDF", "Engie", "Enedis"],
+
+      "responses": [ "Nos principaux partenaires dans ce domaine sont: EDF, Engie, Enedis" ] 
+       
+    },
+
+    {
+      "tag": "Partenaire_Trasnport",
+
+      "patterns": [ "Quel sont les entreprises partenaires dans le domaine des transports ?", "Vous avez des clients dans les transports ?", "Vous faites les transports ?", "Collaborez-vous avec des sociétés de Fret ?", "Travaillez-vous dans les transports ?", "SNCF", "Sytral" ],
+
+      "responses": [ "Nos principaux partenaires dans ce domaine sont:  SNCF et Sytral." ] 
+       
+    },
+
+    {
+      "tag": "Partenaire_TelecomMedia",
+
+      "patterns": [ "Quelles sont les entreprises partenaires dans le domaine des télécomunications ?", "C'est quoi vos partenaires Media ?", "Avez-vous des partenaires dans le domaine télévisuel ?", "Certains opérateurs travaillent ils avec vous ?", "Vous travaillez avec des radios ?",  "TF1", "M6", "France TV", "Radio France", "SFR" ],
+
+      "responses": [ "Nos principaux partenaires dans ce domaine sont: TF1, M6, France TV, Radio France et SFR" ] 
+       
+    },
+
+    {
+      "tag": "ESN",
+
+      "patterns": [ "Qu'est-ce qu'une ESN ?", "Que signifie ESN ?", "Que veut dire ESN ?", "C'est quoi ESN ?", "T'es une SSII ?", "Quel est le type de votre entreprise ?" ],
+
+      "responses": [ "Une ESN (anciennement SSII) est une Entreprise du Service du Numérique" ]
+
+    },
+
+    {
+      "tag": "Solutec",
+
+      "patterns": [ "Qu'est ce que Solutec ?", "Quelle est cette societé ?", "Qu'est ce qu'elle fait ?", " C'est quoi Solutec ?", "Que faites vous ?"],
+
+      "responses": [ "Solutec est une SSII specialisée en ingénierie", "Solutec est une entreprise d'ingéniérie, une SSII" ]
+
+    },
+
+    {
+      "tag": "Prestations",
+
+      "patterns": [ "Que fait Solutec ?", "Quelles sont les prestations ?", "Prestations ?", "Spécialité Solutec ?", "Sur quoi travaille Solutec ?" ],
+
+      "responses": "Solutec vous accompagne dans toutes les phases de vos projets informatiques, je vous invite à cliquer sur ce lien : http://www.solutec.fr/fr/accueil/notre-activite/nos-perimetres-d-intervention"
+       
+    },
+
+    {
+      "tag": "Dvlp_Durable",
+
+      "patterns": [ "Avez-vous des projets dans le developement durable", "Que faites vous pour l'éocologie", "Comment conciler dévelopment et écologie", "Etes-vous sensible à l'environement ?", "Agissez-vous pour la planete"],
+
+      "responses": [ "C’est un impératif : nous veillons à inscrire notre politique de croissance dans une démarche de développement durable, respectueuse de l’environnement et des hommes" ] 
+       
+    },
+
+    {
+      "tag": "Domaines_De_Competences",
+
+      "patterns": [ "Que faites vous?", "Que fait Solutec ?", "Quels sont vos domaines d'activités", "Dans quel secteur travaillez-vous ?", "Quel est votre domaine d'expertise ?", "C'est quoi votre domaine ?" ],
+
+      "responses": [ "Solutec couvre l’ensemble des besoins en ingénierie informatique (Maitrise d'oeuvre, Maitrise d'ouvrage, Infrastructure et exploitation, coordination et pilotage)."] 
+       
+    },
+
+    {
+      "tag": "Sur_Mesure",
+
+      "patterns": ["Comment prenez-vous en compte les besoins du client ?", "Faites vous le même contrat pour tous vos clients ?", "Avez-vous un contrat type ?", "Comment vous vous adaptez à l'ensemble de vos clients", "Comment etudiez-vous nos besoins ?" ],
+
+      "responses": [ "Nous ajustons notre approche au service et au degré d’engagement exigés par nos clients", "Notre philosophie : envisager chaque prestation au cas par cas", "Les équipes commerciales Solutec écoutent, qualifient, conseillent et soumettent les solutions les mieux adaptées au cahier des charges" ] 
+       
+    },
+
+    {
+      "tag": "Sens_Humain",
+
+      "patterns": [ "Comment voyez-vous la relation clients ?", "Comment vous nous accompagnez ?", " Quel est le rythme de votre suivi ?", "Etes-vous facilement disponible ?", "Peut on vous contactez facilement ?" ],
+
+      "responses": [ "Trois principes constituent le socle de nos relations clients. (la culture du service, la disponibilité et l’accompagnement des consultants)" ] 
+       
+    },
+
+    {
+      "tag": "Qualite",
+
+      "patterns": [ "Comment formez-vous vos collaborateurs ?", "Chacun des collaborateurs a t'il une spécialité ?", "Votre salarié peut il former mes collaborateurs ?", "Vos intervenants suivent ils régulierement des formations ?", "Assurez-vous le background de vos collaborateurs ?" ],
+
+      "responses": [ "Chacune des prestations SOLUTEC s’inscrit dans une démarche de qualité continue. (le background, l'interlocuteur dédié et la formation." ] 
+       
+    },
+
+    {
+      "tag": "Innovation",
+
+      "patterns": [ "En quoi êtes vous innovant ?", "Comment percevez-vous l'innovation", "Que représente l'innovation pour vous ?", "Qu'est ce que la création ?", "Etes-vous une societé innovante ?", "Est ce que vous vous definiriez comme une société innovante" ],
+
+      "responses": [ "Solutec s’est imposée comme une SSII innovante. Les métiers de l’ingénierie informatique sont en constante mutation : nous choisir, c’est l’assurance de bénéficier des dernières avancées technologiques et méthodologiques." ] 
+       
+    },
+
+    {
+      "tag": "Poles_Competences",
+
+      "patterns": [ "Dans quels domaines travaillez-vous ?", "Que faites-vous ?", "Quel sont vos pôles de competences ?", "Sur quelle technologie travaillez-vous ?", "Sur quoi portent vos projets ?", "travaillez-vous sur autre chose que la maitrise d'ouvrage ?", "Avez-vous d'autres domaines de travail que la maitrise d'oeuvre ?", "Faites vous autre chose que de l'infrastructure et de l'exploitation ?", "Travaillez dans d'autres secteurs que la coordination et le pilotage de projets ?"  ],
+
+      "responses": [ "Nous travaillons dans la maitrise d'ouvrage, la maitrise d'oeuvre, Infrastructure et le réseau la coordination de projets et le pilotage" ] 
+       
+    },
+
+    {
+      "tag": "Maitrise_Oeuvre",
+
+      "patterns": [ "Vous travaillez dans la maitrise d'oeuvre ?", "Que faites vous dans la maitrise d'oeuvre ?", "Vous faites de la maitrise d'oeuvre ?", "Vous faites quoi dans la maitrise d'oeuvre ?", "Vous avez des projets en maitrise d'oeuvre ?", "Recueil des besoins", "Analyse et Conception", "Rédaction des spécifications détaillées", "Evaluation des délais de réalisation", "Réalisation / Développement", "Tests", "Recette", "Mise en production", "Maintenance corrective et évolutive", "Gestion d’application", "Réception des demandes clients", "Priorisation des tâches", "Définition de lots ou de patchs", "Gestion des contraintes de production sur les planning et délais" ],
+
+      "responses": [ "Nous travaillons par exemple sur des recueils de besoins, de l'analyse et de la conception, de la rédaction des spécifications détaillées." ] 
+       
+    },
+
+    {
+      "tag": "Maitrise_Ouvrage",
+
+      "patterns": [ "Vous travaillez dans la maitrise d'ouvrage ?", "Que faites vous dans la maitrise d'ouvrage ?", "Vous faites de la maitrise d'ouvrage ?", "Vous faites quoi dans la maitrise d'ouvrage ?", "Vous avez des projets en maitrise d'ouvrage ?", "Etude d’opportunité", "Cadrage du projet", "Analyse des besoins et rédaction du cahier des charges", "Rédaction des spécifications", "Relation client / Coordination / Pilotage", "Respect des normes et process", "Tests et Recette", "Conduite du changement" ],
+
+      "responses": [ "Oui bien sûr, par exemple: Etude d’opportunité,  Cadrage du projet, Respect des normes, process, Tests et Recette." ] 
+       
+    },
+
+    {
+      "tag": "Exploitation_Infra",
+
+      "patterns": [ "Vous travaillez dans l'infrastructure et l'exploitation ?", "Que faites vous dans l'infrastructure et l'exploitation ?", "Vous faites de l'infrastructure et l'exploitation ?", "Vous faites quoi dans la l'infrastructure et l'exploitation ?", "Vous avez des projets en infrastructure et en exploitation ?", "Administration", "Exploitation des systèmes", "réseaux", "Déploiement et mise en production", "Maintien en condition opérationnelle", "Conception et dimensionnement des architectures systèmes et réseaux", "Définition, respect et suivi de SLA", "Veille technologique", "Tests de stress de charge des infrastructures", "Expertise technique", "Support haut niveau"  ],
+
+      "responses": [ "Oui bien sûr, par exemple : administration, exploitation des systèmes et des réseaux, déploiement et mise en production." ] 
+       
+    },
+
+    {
+      "tag": "Coordination_Pilotage",
+
+      "patterns": [ "Vous travaillez dans la coordination et le pilotage ?", "Que faites vous dans la coordination et le pilotage ?", "Vous faites de la coordination et le pilotage ?", "Vous faites quoi dans la coordination et le pilotage ?", "Vous avez des projets de coordination et le pilotage ?", "Cadrage de projet", "Chiffrage", "Planification", "Coordination de projets", "Management d’équipe", "Gestion avancée des coûts et des budgets", "Gestion des ressources et des compétences", "Réalisation de tableaux de bord et suivis", "Suivi des performances","Animation de réunions", "Workshop", "COPIL", "COSTRAT"],
+
+      "responses": [ "Oui bien sûr, par exemple : Cadrage de projet, Chiffrage, Planification, Gestion des ressources et des compétences." ] 
+       
+    },
+
+   
+    {
+      "tag": "Les_Metiers",
+
+      "patterns": [ "Quel type de métiers recherchez-vous ?", "Que proposez-vous comme emploi ?", "Quels sont les metiers proposés ?", "Les postes chez-vous c'est quoi ?", "Vous recherchez quels domaines d'expertise ?", "Dans quel secteur recrutez-vous ?"],
+
+      "responses": [ "Nous cherchons des emplois dans les domaines suivants: étude et développement, Génie logiciel, AMOA et intégration applicative, Gouvernance IT et urbanisation SI, Infra et systèmes réseaux." ] 
+       
+    },
+
+    {
+      "tag": "Metiers_EtudeDvlp",
+
+      "patterns": [ "Cherchez-vous des consultants SI ?", "Rechercher vous des postes d'architectes", "Avez-vous des profils d'ingénieur methodes ?", "Vous avez des salariés, ingénieur qualités ?", "tu cherches un consultant ?", "Etude et développement", "Consultant SI", "Architecte applicatif", "Ingénieur Méthodes", "Ingénieur Qualité"],
+
+      "responses": [ "En études et développement nous cherchons les profils suivants : consultant SI, architecte applicatif, ingénieur Méthodes et ingénieur Qualité"] 
+       
+    },
+
+    {
+      "tag": "Metiers_AMOAIntegration",
+
+      "patterns": [ "Cherchez-vous des analystes fonctionnel ?", "Rechercher vous des postes des consultants ?", "Avez-vous des profils d'analyste fonctionel ?","Vous avez des salariés, coordinateur de projet ?", "tu cherche un chef de projet ?",  "AMOA", "Intégration", "Analyste fonctionnel", "Consultant", "Expert fonctionnel", "Coordinateur", "Chef de projet", "Ingénieur recette", "homologation"],
+
+      "responses": ["En études et développement nous cherchons les profils suivants : analyste fonctionnel, consultant, expert fonctionnel, coordinateur, chef de projet et ingénieur recette" ] 
+       
+    },
+
+    {
+      "tag": "Metiers_GouvernanceITUrba",
+
+      "patterns": [ "Cherchez-vous des consultants SI ?", "Rechercher vous des postes d'architectes applicatif ?", "Avez-vous des profils d'ingénieur méthodes ?","Vous avez des salariés, d'ingénieur qualité ?", "tu cherche dans la gourvernance IT ?", "Consultant SI", "Architecte applicatif", "Ingénieur Méthodes", "Ingénieur Qualité"],
+
+      "responses": [  "En études et développement nous cherchons les profils suivants : consultant SI, architecte applicatif, ingénieur Méthodes et ingénieur Qualité" ] 
+       
+    },
+
+    {
+      "tag": "Metiers_InfraSysReseaux",
+
+      "patterns": [ "Cherchez-vous des ingénieurs d'exploitation ?", "Rechercher vous des postes d'administrateur système ?", "Avez-vous des profils de coordinateur infra ?","Vous avez des salariés, en delivery manager' ?", "tu cherche dans l'administration réseaux ?", "Ingénieur d’exploitation", "Ingénieur systèmes", "Administrateur système et réseaux", "Administrateur de bases de données", "DBA", "Coordinateur Infrastructure", "Delivery manager"],
+
+      "responses": [ "En études et développement nous cherchons les profils suivant: ingénieur d’exploitation, ingénieur systèmes, administrateur système et réseaux, administrateur de bases de données, coordinateur Infrastructure et Delivery manager" ] 
+       
+    },
+
+    {
+      "tag": "Etranger",
+
+      "patterns": [ "Proposez-vous des emplois à l'étranger ?", "Avez-vous des contrats avec des sociétés en dehors de la France ?", " Est ce que votre périmetre d'action se limite à la France", "Travaillez-vous en Europe", "Travaillez-vous avec d'autres pays ?", "Travaillez-vous avec les Etats-Unis ?", " Peut on travailler à l'international ?", "Y a t'il des débouchés dans le monde ?"],
+
+      "responses": [ "Nos consultants interviennent également sur des sites à l’étranger, implantés sur les 5 continents", "Nos consultants interviennent sur les 5 continents dans des environnements stimulants, riches en opportunités et en évolutions de carrière." ] 
+       
+    },
+
+    {
+      "tag": "Process_RH",
+
+      "patterns": [ "Comment se passe le processus de recrutement ?", "Comment se déroule le process d'embauche", "Qu'elles sont les étapes du recrutement ?", "Comment est on recruté ?", "Il faut passer des entretiens ?",  "Que se passe t'il après avoir donnée son CV", "Que se passe t'il après avoir passé les entretiens ?"],
+
+      "responses": [ "Il y a tout d'abord une première sélection sur CV puis 2 entretiens et une enfin une réponse rapide." ] 
+       
+    },
+
+    {
+      "tag": "Entretiens",
+
+      "patterns": [ "Sur quoi portent les deux entretiens ?", "Pouvez-vous me donner plus de détails sur les entretiens ?", "Qu'est ce que l'on aborde pendant ces 2 entretiens ?", "De quoi parle t'on pendant ces rendez-vous ?", "On discute avec qui ?" ],
+
+      "responses": [ "Les 2 entretiens portent sur vos compétences, vos expériences, votre projet professionnel, présentation des missions, ..." ] 
+       
+    },
+
+    {
+      "tag": "Postuler",
+
+      "patterns": [ "Avez-vous des offres d'emplois ?", "Avez-vous des jobs", "Proposez-vous des contrats de travail ?", "Recrutez-vous ?", "Comment fait on pour postuler ?", "Rechechez-vous certaines personnes", "Que proposez-vous pour les stages ?", "Recrutez-vous des ingénieurs", "Recrutez-vous dans le domaine de l'ingenierie ?"],
+
+      "responses": [ "Rendez-vous sur cette page pour postulez à nos offres: https://krb-sjobs.brassring.com/TGWebHost/searchopenings.aspx?partnerid=30124&siteid=6451" ] 
+       
+    },
+
+    {
+      "tag": "Postuler_Stage",
+
+      "patterns": [ "Avez-vous des offres de stage ?", "Avez-vous des stages ?", "Proposez-vous des contrats pour des étudiants ?", "Je suis en école d'inegnieur que me proposez-vous?", "Comment fait on pour postuler à un stage ?", "Que proposez-vous pour les stages ?", "Avez-vous des offres de stage ? "],
+
+      "responses": [ "Rendez-vous sur cette page pour postulez à nos offres: https://krb-sjobs.brassring.com/TGWebHost/searchopenings.aspx?partnerid=30124&siteid=6452" ] 
+       
+    },
+
+    {
+      "tag": "Candidature_Spontanee",
+
+      "patterns": [ "Comment déposer un CV ?", "Je voudrai vous donner mon CV", "Est-ce que je peux déposer une candidature spontanée ?", "Je n'ai pas trouvé d'offre d'emploi pour moi est ce que je peux vous laisser mon CV ?", "Votre société m'intéresse vraiment est ce que je peux laisser mon curriculum vitae ? " ],
+
+      "responses": [ "Suivez ce lien pour déposez une candidature spontanée : https://krb-sjobs.brassring.com/tgwebhost/profileprovider.aspx?SID=^7t2ViaErWnp8sXKLO1gqVqcSI7/V7APA/FowfvLNr9aRWVdXJp4NG6F5JBi09PKA&CalledFunction=GQ&GQPage=yes&profileid=^9e_plushere_eaEFtwRpqtIe5ujCvm5LhB/4DP/0N&isnonprofile=1&gqsessionid={4DA78FE9-45F6-4F55-97A6-9BA8A6F399CC}&gqpartnerid=30124&gqsiteid=6451&languageid=34&localeid=1036&pprefix=SLT&isgtg=0&gqid=4464&resumedraft=&sdattachments=&drafttype=&aipid=&qsite=&callingurl=&gqrenderingid=5548&sendcandrefemail=No&emailencoding=0&candrefdefaulttemplate=No&showattachmentspage=True&stackingrule=9&gqautoextraction=False&reqtrigger=Auto&gtggroupid=&jobtitlealiasqid=10115&alwayssendhotcand=No&propercase=Yes&optionalautoextraction=Yes&office07support=Yes&profileimport=&ssoid=&CreateFormsOnly=0&jobinfo=" ] 
+       
+    },
+
+    {
+      "tag": "Avantages_Cariere",
+
+      "patterns": [ "Quels sont les avantages de Solutec ?", "Pourquoi signer chez-vous ?", "Qu'est ce que votre société peut m'apporter ?", "Pourquoi votre société peut m'apporter quelque chose de plus que vos concurents ?", "Pourquoi faire carrière chez-vous ?" ],
+
+      "responses": [ "Parce que nous sommes un incubateur de talents.", "Parce que nous misons sur votre épanouissement.", "Parce que nous vous offrons des opportunités d’évoluer dans différents métiers.", "Parce que nous avons les moyens d’élargir votre expertise.", "Parce que nous souhaitons que votre carrière avance, bouge ! " ] 
+       
+    },
+
+    {
+      "tag": "Les_Plus",
+
+      "patterns": [ "Pourquoi choisir Solutec ?", "Quels sont les plus de Solutec ?", "Que faites vous pour le suivi de vos collaborateurs ?", "Comment concevez-vous les relations avec les employés ?" ,"Quels objectifs fixez-vous à vos employés ?"],
+
+      "responses": [ "Proximité, dialogue, écoute : SOLUTEC vous aide à réaliser vos objectifs" ] 
+       
+    },
+
+    {
+      "tag": "Les_Plus1",
+
+      "patterns": [ "Comment identifiez-vous mes besoins ?", "Comment puis-je vous faire connaitre mon projet professionnel  ?", "Y a t'il moyen que je vous parle de ce que je veux faire", "Comment vous vous adpatez au volontés des futurs employés ?", "Connaissez-vous ce que veulent vos salariés" ],
+
+      "responses": [ "Dès notre première rencontre, votre projet professionnel, votre expertise et vos désirs d’évolution sont passés au crible" ]
+       
+    },
+
+    {
+      "tag": "Les_Plus2",
+
+      "patterns": [ "Si je suis en mission tout le temps, quand est ce que je peux me former ?", "Y a-t-il un suivi lors de mission ?", "Comment monter en compétence au sein de votre entreprise ?", "Quels sont les perspectives de carrière ?", "Comment monter en compétence ?" ],
+
+      "responses": [ "Où que vous interveniez, nous échangeons, organisons des bilans réguliers.", "SOLUTEC met en place un plan d’évolution personnalisé pour consolider, élargir et enrichir vos champs de compétences." ] 
+       
+    },
+    
+    {
+      "tag": "Les_Plus3",
+
+      "patterns": [ "Comment voyez l'évolution dans l'entreprise ?", "Y a t'il un entretien de carrière ?" , "Chaque année faites vous un bilan ?", "Y a t'il un suivi des parcours en sein de la société", "Est on suivi régulierement par nos supérieurs ?" ],
+
+      "responses": [ "Chaque année, l’entretien de carrière vous aide à y voir plus clair dans votre horizon professionnel." ] 
+       
+    },
+
+    {
+      "tag": "Jeunes_Diplomes",
+
+      "patterns": [ "Je viens d'avoir mon diplôme d'ingénieur", "Je cherche un premier emploi", "Je cherche à m'enrichir", "J'etais étudiant il y a peu", "votre entreprise recrute elle de jeunes diplômés ?", "J'ai peu d'expérience professionnelle cela vous gêne t'il ?" ],
+
+      "responses": [ "Rejoignez-nous pour une première expérience solide, enrichissante et passionnante." ] 
+       
+    },
+
+    {
+      "tag": "ingénieur_Experimente",
+
+      "patterns": [ "Cela fait de nombreuses années que je travaille dans l'ingénierie", "Je travaille depuis longtemps dans ce domaine", "je suis dans ce domaine depuis longtemps", "J'ai de nombreuses experiences dans ce secteur", "J'ai exercé plusieurs années dans ce domaine." ],
+
+      "responses": [ "Rejoignez nous pour valoriser votre expérience au profit de projets ambitieux." ] 
+       
+    },
+
+    {
+      "tag": "ingénieur_Tech",
+
+      "patterns": [ "Je travaille dans le domaine du technique", "Je suis scientifique de formation", "Je cherche dans le domaine scientifique", "Ma formation est ingénieur technique", "Mon cursus est celui d'un ingénieur dans la recherche" ],
+
+      "responses": [ "Rejoignez nous vous lancer de nouveaux défis et donner une nouvelle dynamique à votre carrière." ] 
+       
+    },
+
+    {
+      "tag": "Challenger",
+
+      "patterns": [ "J'aime me dépasser pour aller plus loin", "Le challenge est il important pour vous ?", "Je suis intéressé pas le côté innovant de votre société.", "Considérez-vous que Solutec est une société innovante ?", "Comment se passe le process d'innovation ?" ],
+
+      "responses": [ "La curiosité et le besoin d’aller plus loin associés à la politique de suivi personnalisé de SOLUTEC vous ouvriront des portes." ] 
+       
+    },
+
+    {
+      "tag": "Aventurier",
+
+      "patterns": [ "J'aime innover", "J'aime bien le changement", "Proposez-vous des missions variées ?", "J'apprécie le changement", "J'aime prendre des risques ?" ],
+
+      "responses": [ "Vous n’avez pas peur du changement, Vous êtes faits pour aborder les environnements diversifiés des clients SOLUTEC !" ] 
+       
+    },
+
+    {
+      "tag": "Team_Spirit",
+
+      "patterns": [ "J'ai l'esprit d'équipe", "J'aime transmettre mes connaissancses", " Je suis tres motivé pour travailler pour vous", "J'aime travailler en groupe", "J'apprecie les échanges avec les collaborateurs." ],
+
+      "responses": [ "Si vous aimez transmettre, que vous avez l'esprit d'équipe et que vous êtes motivé, ces qualités vous permettront d’avancer rapidement chez SOLUTEC." ] 
+       
+    },
+
+    {
+      "tag": "Reseaux_Sociaux",
+
+      "patterns": [ "Etes-vous présent sur les réseaux sociaux ?", "Communiquez-vous sur d'autres plateformes", "Etes-vous présent sur d'autres sites ?", "Favorisez-vous certains réseaux ?" , "Etes-vous present sur le net ?"],
+
+      "responses": [ "Oui nous sommes présents sur Facebook, LinkedIn et Viadeo" ] 
+       
+    },
+
+    {
+      "tag": "LinkedIn",
+
+      "patterns": [ "Etes-vous sur LinkedIn ?", "Etes-vous sur un réseau pro ?" , "Je peux vous retrouver sur LinkeIn ?", "Avez-vous un compte sur LinkedIn ?", "T'es present sur LinkedIn ?"],
+
+      "responses": [ "Nous sommes effectivement présent sur LinkedIn: https://fr.linkedin.com/company/solutec" ] 
+       
+    },
+
+    {
+      "tag": "Facebook",
+
+      "patterns": [ "Etes-vous sur Facebook", "Avez-vous un compte Facebook ? ", "Je peux vous retrouver sur Facebook ?", "T'es présent sur Facebook ?", "t'es sur Fb?" ],
+
+      "responses": [ "Nous sommes effectivement présent sur Facebook: https://fr-fr.facebook.com/Solutec-500048140189961/" ] 
+       
+    },
+
+    {
+      "tag": "Viadeo",
+
+      "patterns": [ "Etes-vous sur un reseau pro ?", "Vous êtes sur Viadeo ?" ,  "On peut se retrouver sur Viadeo ?", "Vous avez un compte Video ?", "t'es sur Viadeo ?" ],
+
+      "responses": [ "Nous  sommes effectivement présent sur Viadeo: http://fr.viadeo.com/fr/company/solutec" ] 
+       
+    },
+
+    {
+      "tag": "Insultes",
+
+      "patterns": [ "Connard", "enculé", "fils de pute", "baise", "raclure", "ta gueule", "merdeux", "pd", "sale", "pute", "con"],
+
+      "responses": [ "Vos propos ne semblent pas adaptés à un langage d'entreprise.", "Est ce bien là vos propos ?", "Je vous connaissais plus élégant." ]
+
+    }
+  ]
+}

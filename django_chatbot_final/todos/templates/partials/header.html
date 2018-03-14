@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+    <title>Solutec Beta</title>
+    
+  </head>
+  <body>
+    <div class="chat-sidebar">
+        <div class="sidebar-name">
+            <a href="javascript:register_popup('Solutec', 'Solutec', 'nice');">
+        
+                <span>Solutec</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- <div id="test">
+      "test"
+    </div>
+
+    <div id="chat-text">
+        {% for todo in todos %}
+          Vous: {{todo.title}}
+          Solutec: {{todo.text}}
+        {% endfor %}
+    </div> -->
+
+
+
+
+    <header>
+      <h1>Solutec Chatbot Beta</h1>
+      <a href="/todos/add">Add Question</a>
+      <hr>
+    </header>

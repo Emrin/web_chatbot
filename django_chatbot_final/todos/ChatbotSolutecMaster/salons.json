@@ -1,0 +1,44 @@
+[
+    {
+        "name":"salon de paris",
+        "ville":"paris",
+        "date_debut":"12/03/2018",
+        "duree":"2"
+    },
+    {
+        "name":"salon de Lyon",
+        "ville":"Lyon",
+        "date_debut":"16/12/2017",
+        "duree":"2"
+    },
+    {
+        "name":"salon des entreprises",
+        "ville":"Paris",
+        "date_debut":"20/12/2017",
+        "duree":"5"
+    },
+    {
+        "name":"salon de France",
+        "ville":"Paris",
+        "date_debut":"07/01/2018",
+        "duree":"2"
+    },
+    {
+        "name":"Salon international du conseil",
+        "ville":"Strasbourg",
+        "date_debut":"12/02/2018",
+        "duree":"5"
+    },
+    {
+        "name":"CES",
+        "ville":"Las vegas",
+        "date_debut":"05/01/2018",
+        "duree":"5"
+    },
+    {
+        "name":"Rencontre entrepise",
+        "ville":"Paris",
+        "date_debut":"12/03/2018",
+        "duree":"1"
+    }
+]
